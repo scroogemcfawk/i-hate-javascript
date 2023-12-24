@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I hate JavaScript</title>
+    <script src="ihatejavasctipt.js"></script>
+</head>
+<body style="font-family: monospace">
+<h2>Password Generator</h2>
+<h3>And I Hate JavaScript</h3>
+<label>
+    Length:
+    <input id="passLen" type="number" value="17">
+</label>
+<br/>
+<label>
+    Symbol set:
+    <input type="radio" id="radio" name="symset" checked />
+    <label for="radio">
+        Default (Recommended) (Only option)
+    </label>
+</label>
+<br/>
+<label>
+    Number:
+    <input id="passNum" type="number" value="8">
+</label>
+<br/>
+<button id="generateButton" onclick="generateHandler()">Generate</button>
+<div id="result" class="hidden">
+    <p>Click to copy:</p>
+    <ul id="resultList"></ul>
+</div>
+<style>
+    .hidden {
+        opacity: 0;
+        cursor: default;
+    }
+</style>
+</body>
+</html>
